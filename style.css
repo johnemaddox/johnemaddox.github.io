@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #000;
+  background-color: #FFF;
+  font: 100%  "Ubuntu", sans-serif;
+}
+
+.wrapper {
+  min-width: 300px;
+  max-width: 1024px;
+  padding: 10px 20px 10px 20px;
+  margin: 10px auto 10px auto;
+}
+
+/* font */
+h1, h2, h3, p { margin-bottom: 15px; }
+
+h1 { font-size: 1.6em; }
+
+h2 { font-size: 1.4em; }
+
+h3 { font-size: 1.2em; }
+
+.intro, .box-content { line-height: 1.75em; }
+
+/* links */
+a:link, a:visited {
+  text-decoration: none;
+  color: #F00;
+}
+
+a:hover { color: #600; }
+
+a.btn:link, a.btn:visited {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  text-align: center;
+  background: #036;
+  color: #FFF;
+  margin-top: 5px;
+  text-decoration: none;
+}
+
+a.btn:hover { background: #024; }
+
+/* box content */
+.header {
+  border-bottom: 2px solid #000;
+  margin-bottom: 15px;
+  font-weight: bold;
+  position: relative;
+}
+
+.animate div {
+  border-right: 2px solid #FFF;
+  margin-bottom: 15px;
+  /* white-space, overflow, width are for animation */
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+
+.links {
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  background: #DDD;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.box-content {
+  padding: 15px 15px 0 15px;
+  margin-bottom: auto;
+}
+
+.box-content p {
+  padding: 0 15px 0 15px;
+}
+
+/* grid */
+.grid {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: auto;
+  grid-gap: 15px;
+}
+
+@media (min-width: 900px) {
+
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .c1 {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+
+  .c2 {
+    grid-column: 3 / 5;
+    grid-row: 1;
+  }
+
+  .b1 {
+    grid-column: 1 / 3;
+    grid-row: 2;
+  }
+
+  .b2 {
+    grid-column: 3 / 5;
+    grid-row: 2;
+  }
+
+  .b3 {
+    grid-column: 1 / 3;
+    grid-row: 3;
+  }
+
+  .b4 {
+    grid-column: 3 / 5;
+    grid-row: 3;
+  }
+
+}
+
+/* animation */
+.header .name {
+  animation:
+    blinkCursor 500ms steps(40) 0s 8,
+    printName 2s steps(15) 1s 1 normal forwards;
+}
+
+.header .title {
+  animation:
+    blinkCursor 500ms steps(40) 4s infinite,
+    printTitle 4s steps(25) 4s 1 normal forwards;
+}
+
+@keyframes blinkCursor {
+  from { border-color: #000; }
+  to { border-color: #FFF; }
+}
+
+@keyframes printName {
+  from { width: 0; }
+  to { width: 7em; }
+}
+
+@keyframes printTitle {
+  from { width: 0; }
+  to { width: 8.6em; }
+}
