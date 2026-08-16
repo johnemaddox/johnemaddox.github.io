@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono");
 
 * {
   margin: 0;
@@ -60,6 +60,7 @@ a.btn:hover { background: #024; }
 }
 
 .animate div {
+  font-family: "Ubuntu Mono", monospace;
   border-right: 2px solid #FFF;
   margin-bottom: 15px;
   /* white-space, overflow, width are for animation */
@@ -141,13 +142,13 @@ a.btn:hover { background: #024; }
 .header .name {
   animation:
     blinkCursor 500ms steps(40) 0s 8,
-    printName 2s steps(15) 1s 1 normal forwards;
+    printName 2s steps(13) 1s 1 normal forwards;
 }
 
 .header .title {
   animation:
     blinkCursor 500ms steps(40) 4s infinite,
-    printTitle 4s steps(25) 4s 1 normal forwards;
+    printTitle 4s steps(17) 4s 1 normal forwards;
 }
 
 @keyframes blinkCursor {
@@ -157,10 +158,10 @@ a.btn:hover { background: #024; }
 
 @keyframes printName {
   from { width: 0; }
-  to { width: 7em; }
+  to { width: 13ch; }
 }
 
 @keyframes printTitle {
   from { width: 0; }
-  to { width: 8.6em; }
+  to { width: 17ch; }
 }
