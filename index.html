@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="John E Maddox is a Firmware Engineer located in the San Francisco Bay Area.">
-  <title>John E Maddox - Firmware Engineer - San Francisco Bay Area</title>
+  <meta name="description" content="Embedded Systems and Firmware Engineer located near Austin, Texas with over 10 years of experience. Former MK-15 CIWS tech in the US Navy.">
+  <title>John E Maddox - Embedded Systems, Firmware Engineer - Austin, Texas</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,49 +15,53 @@
         <a href="https://www.linkedin.com/in/johnemaddox/">LinkedIn</a> | 
         <a href="https://github.com/johnemaddox">Github</a>
       </div>
-      <div class="animate">
-        <div class="name">John E Maddox</div>
-        <div class="title">Firmware Engineer</div>
+      <div class="title">
+        <h1>John E Maddox</h1>
+        <h2>Embedded Systems / Firmware Engineer</h2>
       </div>
     </div>
     <div class="grid">
-      <div class="intro c1">
-        <p>Hello, my name is John E Maddox. I am a Firmware Engineer located in the San Francisco Bay Area. I have experience in full stack development, application development, and embedded systems. Early in my career I launched a small web development firm that was acquired for its IP.</p>
+      <div class="intro">
+        <p>I have experience ranging from embedded systems for R&amp;D to Firmware for legacy systems on mainframes. My background includes working on electrical systems (specifically the <a href="https://www.youtube.com/results?search_query=ciws">Mk-15 CIWS</a>) in the US Navy, which provided real world experience working on complex systems in a high pressure environment.</p>
+        <p>After the military I became interested in coding as a hobby. This evolved into a small web development firm that was acquired for its IP. After my company was acquired, I discovered embedded systems which tied my experience with electronics and software development together.</p>
       </div>
-      <div class="intro c2">
-        <p>This portfolio contains a brief overview of some of my projects on <a href="https://github.com/johnemaddox">Github</a>. If you are interested in my work history or you would like to contact me, please visit my <a href="https://www.linkedin.com/in/johnemaddox/">LinkedIn</a> profile.</p>
-      </div>
-      <div class="box b1">
+      <div class="box">
         <div class="box-content">
-          <h2>&lt; Traffic Control System &sol;&gt;</h2>
-          <p>Coming Soon.</p>
+          <h2>&lt; C Design Patterns &sol;&gt;</h2>
+          <p>A C library designed for embedded systems built specifically for resource-constrained microcontrollers. These patterns, or variations of these patterns, are used in the projects I work on. They are heap-less and optimized.</p>
         </div>
-        <div class="box-link">
-          <a href="#" class="btn">Traffic Control System</a>
-        </div>
+        <a href="https://github.com/johnemaddox/c-design-patterns" class="btn">View C Library</a>
       </div>
-      <div class="box b2">
+      <div class="box">
         <div class="box-content">
-          <h2>&lt; Plant Monitor IoT &sol;&gt;</h2>
-          <p>Coming Soon.</p>
+          <h2>&lt; STM32 Traffic Light &sol;&gt;</h2>
+          <p>A state-machine-driven traffic light intersection model running on an STM32 MCU, utilizing a shift register for LED control and external interrupts for emergency overrides.</p>
         </div>
-        <a href="#" class="btn">Plant Montior IoT</a>
+        <a href="https://github.com/johnemaddox/stm32-intersection" class="btn">View Traffic Light</a>
       </div>
-      <div class="box b3">
+      <div class="box contact-box">
         <div class="box-content">
-          <h2>&lt; Plant Monitor Server &sol;&gt;</h2>
-          <p>Coming Soon.</p>
+          <h2>&lt; Contact Me &sol;&gt;</h2>
+          <p>Please contact me via this form or <a href="https://www.linkedin.com/in/johnemaddox/">LinkedIn</a> for job opportunities including contract work.</p>
+          <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+            <input type="hidden" name="access_key" value="c0084efd-b4c0-4ea6-a388-63db7021d5e8">
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" required placeholder="Your Name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required placeholder="your.email@example.com">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" required placeholder="Write your message here..." rows="5"></textarea>
+            </div>
         </div>
-        <a href="#" class="btn">Plant Monitor Server</a>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
       </div>
-      <div class="box b4">
-        <div class="box-content">
-          <h2>&lt; Plant Monitor GUI &sol;&gt;</h2>
-          <p>Coming Soon.</p>
-        </div>
-        <a href="#" class="btn">Plant Monitor GUI</a>
-      </div>
-    </div>
   </div>
 </body>
 </html>
